@@ -5,7 +5,6 @@ import loginPage.EnterUserName;
 import org.testng.annotations.Test;
 
 public class EnterUserNameAndClickNext extends BaseClass {
-
     @Test
     public void clickSignIn()
     {
@@ -23,5 +22,11 @@ public class EnterUserNameAndClickNext extends BaseClass {
     {
         EnterUserName enterUserName=new EnterUserName(driver);
         enterUserName.clickNextButton();
+    }
+    @Test(dependsOnMethods = {"enterUserName"})
+    public void clickForgotUsername()
+    {
+        EnterUserName enterUserName=new EnterUserName(driver);
+        enterUserName.forgotUserName();
     }
 }

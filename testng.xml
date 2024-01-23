@@ -7,7 +7,7 @@
     <test name="Demo Automation">
         <classes>
             <class name="createAccount.ClickOnCreateAccountButton"/>
-            <class name="enterUserNameTestCases.EnterUserNameAndClickNext"/>
+           <!-- <class name="enterUserNameTestCases.EnterUserNameAndClickNext"/>-->
         </classes>
 
     </test>

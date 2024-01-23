@@ -19,6 +19,8 @@ public class EnterUserName {
     private WebElement signIn;
     @FindBy(xpath = "//a[@id='createacc']")
     private WebElement createAcc;
+    @FindBy(xpath = "//a[@id='mbr-forgot-link']")
+    private WebElement forgtUser;
 
     public EnterUserName(WebDriver driver)
     {
@@ -41,6 +43,10 @@ public class EnterUserName {
     public void createAccountButton()
     {
         wait.until(ExpectedConditions.visibilityOf(createAcc)).click();
+    }
+    public void forgotUserName()
+    {
+        wait.until(ExpectedConditions.visibilityOf(forgtUser)).click();
     }
 
 
