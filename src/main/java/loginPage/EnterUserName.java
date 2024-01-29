@@ -1,5 +1,4 @@
 package loginPage;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class EnterUserName {
     private WebDriver driver;
     private WebDriverWait wait;
-
     @FindBy(xpath = "//input[@id='login-username']")
     private WebElement userIdTextField;
     @FindBy(xpath = "//input[@id='login-signin']")

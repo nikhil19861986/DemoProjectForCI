@@ -5,9 +5,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
-import java.io.Reader;
 import java.util.Properties;
 public class BaseClass {
     protected WebDriver driver;
